@@ -1,0 +1,104 @@
+.listItem{
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    margin: 10px 0;
+    width:300px;
+    position: relative;
+    border-radius: 5px;
+    text-align: left;
+
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);    
+}
+.listItem:hover{
+    background-color: #f5f5f5;
+}
+.listItem__image{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+    height: 200px;
+}
+.listItem__image img{
+    width:100%;
+    border-radius: 5px 5px 0px 0px;
+    
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.listItem__image:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}   
+.listItem__info{
+    margin-left: 20px;
+    padding: 0 15px 15px;
+    line-height: 1.5;  
+}
+.listItem__info a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+    color: #d1b281;                
+}
+
+.listItem__info a:after {
+    top: 30px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    background: #d1b281;
+
+    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.listItem__info a:hover:after{
+    width: 100%; 
+    left: 0; 
+}
+.listItem__info h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.listItem__info p{
+    font-size: 14px;
+    color: #999;
+}
+.listItem__info button{
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+    padding: 5px;
+}
+.listItem__info button:hover{
+    color: #000;
+}
+.listItem__info button:active{
+    color: #ccc;
+}
+.listItem__info button:focus{
+    color: #ccc;
+}
+.listItem__info button:disabled{
+    color: #ccc;
+}
+@media screen and (min-width: 768px) {
+    .listItem{
+        width: 30%;
+    }
+}
